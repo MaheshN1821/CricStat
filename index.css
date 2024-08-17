@@ -1,0 +1,35 @@
+.cont {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  left: 30px;
+}
+
+body {
+  background-image: url(/images/bg01.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    background-image: none;
+  }
+  .cont {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card1-side,
+  .card2-side,
+  .card3-side {
+    width: 72vw;
+  }
+
+  .card1-side,
+  .card2-side,
+  .card3-side p {
+    font-size: 2.2rem;
+  }
+}

@@ -93,3 +93,43 @@ h2 {
   text-decoration: none;
   color: whitesmoke;
 }
+
+@media screen and (max-width: 380px) {
+  .container {
+    width: 80vw;
+    left: -57px;
+    top: 38px;
+  }
+
+  .container h2 {
+    font-size: 1.2rem;
+  }
+
+  body {
+    background-size: 200% 120%;
+  }
+
+  .extra-info {
+    display: none;
+  }
+
+  .return a h1 {
+    font-size: 1.4rem;
+  }
+
+  .return {
+    border-radius: 8px;
+    width: 108px;
+    height: 62px;
+    top: 12px;
+    left: 12px;
+  }
+
+  .form-group input,
+  .form-group label {
+    font-size: 0.8rem;
+    width: 230px;
+    position: relative;
+    left: -28px;
+  }
+}
